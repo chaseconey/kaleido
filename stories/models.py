@@ -17,3 +17,7 @@ class Story(models.Model):
 
 	def __unicode__(self):
 		return self.title
+
+	# Get more options here: https://docs.djangoproject.com/en/1.5/ref/models/options/
+	class Meta:
+		verbose_name_plural = "stories"
