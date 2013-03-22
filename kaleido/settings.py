@@ -6,6 +6,8 @@ PROJECT_PATH = os.path.dirname(os.path.realpath(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+LOGIN_URL = "/login/"
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )

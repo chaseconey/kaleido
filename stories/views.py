@@ -2,8 +2,8 @@ import datetime
 
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from django.http import HttpResponse
 from django.utils.timezone import utc
+from django.contrib.auth.decorators import login_required
 
 from stories.models import Story
 from stories.forms import StoryForm
@@ -26,6 +26,7 @@ def index(request):
 
 	return render(request, "stories/index.html", {"stories": stories})
 
+@login_required
 def story(request):
 	if request.method == "POST":
 		form = StoryForm(request.POST)
