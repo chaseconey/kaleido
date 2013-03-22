@@ -15,4 +15,15 @@ Setup permissions
 Sync DB
 
 	./manage.py syncdb
-	
+
+Run Server
+
+	./manage.py runserver
+
+
+OTHER FUNCTIONS
+---------------
+
+If you want to have the static files collected
+
+	./manage.py collectstatic
