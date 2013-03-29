@@ -24,14 +24,21 @@ def top_stories(top=180, consider=1000):
 def index(request):
 	stories = top_stories(top=30)
 
-	return render(request, "stories/index.html", {"stories": stories})
+	return render(request, "stories/index.html", {
+		"stories": stories,
+		"user": request.user
+	})
 
 @login_required
 def story(request):
 	if request.method == "POST":
 		form = StoryForm(request.POST)
 		if form.is_valid():
-			form.save()
+			#Get object back
+			story = form.save(commit=False)
+			story.moderator = request.user
+			#Now save to DB
+			story.save()
 			return HttpResponseRedirect("/")
 	else:
 		form = StoryForm()
