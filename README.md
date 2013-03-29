@@ -8,8 +8,8 @@ QUICK INSTALL
 
 1. Create virtual environment and install Django (v1.5 is recommneded)
 
-	% mkvirtualenv kaleido
-	% pip install django
+		% mkvirtualenv kaleido
+		% pip install django
 
 2. Get the [source code][source] for the course
 	
@@ -20,22 +20,22 @@ QUICK INSTALL
 
 3. Setup permissions
 
-	% chmod +x manage.py
+		% chmod +x manage.py
 
 Sync DB
 
-	% ./manage.py syncdb 		# setup an admin user
-	% python loader.py 			# load in some stories (modify with your admin name)
+		% ./manage.py syncdb 		# setup an admin user
+		% python loader.py 			# load in some stories (modify with your admin name)
 
 Run Server
 
-	% ./manage.py runserver
+		% ./manage.py runserver
 
 OTHER FUNCTIONS
 ---------------
 
 If you want to have the static files collected
 
-	% ./manage.py collectstatic
+		% ./manage.py collectstatic
 
 [source]: https://github.com/chasiepoo/kaleido/archive/master.zip
