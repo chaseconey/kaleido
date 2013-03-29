@@ -1,10 +1,8 @@
-kaleido - hacker news django clone
-==================================
+# kaleido - hacker news django clone
 
-QUICK INSTALL
--------------
+## Quick Install
 
-###Setup
+### Setup
 
 1. Create virtual environment and install Django (v1.5 is recommneded)
 
@@ -22,17 +20,16 @@ QUICK INSTALL
 
 		% chmod +x manage.py
 
-Sync DB
+4. Sync DB
 
 		% ./manage.py syncdb 		# setup an admin user
 		% python loader.py 			# load in some stories (modify with your admin name)
 
-Run Server
+5. Run Server
 
 		% ./manage.py runserver
 
-OTHER FUNCTIONS
----------------
+## Other Functions
 
 If you want to have the static files collected
 
