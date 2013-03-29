@@ -36,6 +36,6 @@ OTHER FUNCTIONS
 
 If you want to have the static files collected
 
-	./manage.py collectstatic
+	% ./manage.py collectstatic
 
 [source]: https://github.com/chasiepoo/kaleido/archive/master.zip
