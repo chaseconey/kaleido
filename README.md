@@ -8,6 +8,7 @@
 
 		% mkvirtualenv kaleido
 		% pip install django
+		% pip install MySQL-python # http://stackoverflow.com/questions/4359131/brew-install-mysql-on-mac-os for more informations
 
 2. Get the [source code][source] for the course
 	
