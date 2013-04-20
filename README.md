@@ -11,7 +11,7 @@
 		% pip install MySQL-python
 
 
-http://stackoverflow.com/questions/4359131/brew-install-mysql-on-mac-os for more informations
+http://stackoverflow.com/questions/4359131/brew-install-mysql-on-mac-os for more information
 
 2. Get the [source code][source] for the course
 	
